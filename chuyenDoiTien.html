@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table style="width: 100%">
+    <form action="chuyenDoiTien.html" method="get">
+        <tr>
+            <td>
+        <label>Amount</label>
+        <input id="amount" type="text" name="sotien"/>
+            </td>
+            <td>
+        <label>From Currency</label>
+        <select name="FormCurrency" id="FormCurrency">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+            </td>
+            <td>
+        <label>To Currency</label>
+        <select name="ToCurrency" id="ToCurrency">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+        </select>
+            </td>
+            <td>
+        <input id="Convert" type="button" value="Convert" style="background: violet; color: white" onclick="validateForm()"/>
+            </td>
+        </tr>
+    </form>
+</table>
+    <script src="js.js"></script>
+<table>
+    <tr>
+        <td>
+    <p style="color: blue"> Result: </p>
+        </td>
+        <td>
+    <p id="output" style="color: blue"></p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
